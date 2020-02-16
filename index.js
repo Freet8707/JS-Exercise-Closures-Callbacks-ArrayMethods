@@ -143,6 +143,13 @@ function processProduct(num1, num2, callback) {
 */
 function processContains(item, list, callback) {
   /* CODE HERE */
+  return callback(list.some(function(arrayItem) {
+    if (arrayItem === item) {
+      return true;
+    } else {
+      return false;
+    }
+  }))
 }
 
 /**
