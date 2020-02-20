@@ -315,10 +315,12 @@ function counterMaker() {
 function counterMakerWithLimit(maxValue) {
   /* CODE HERE */
   let count = -1;
-  function counter(maxvalue){
-    
-  }
-  return count;
+  return(maxvalue) =>{
+    if (count < maxValue){
+      return ++count;
+    } else {
+      count = -1
+    };
 }
 
 /////////////// END OF CHALLENGE ///////////////
